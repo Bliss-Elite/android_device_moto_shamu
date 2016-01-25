@@ -19,6 +19,8 @@
 #
 # Everything in this directory will become public
 
+# V4A
+BLISS_AUDIO_MOD := viper
 
 PRODUCT_COPY_FILES += \
     device/moto/shamu/init.shamu.rc:root/init.shamu.rc \
@@ -39,8 +41,10 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     device/moto/shamu/audio_policy.conf:system/etc/audio_policy.conf \
-    device/moto/shamu/audio_effects.conf:system/vendor/etc/audio_effects.conf
-
+    device/moto/shamu/audio_policy.conf:system/vendor/etc/audio_policy.conf \
+    device/moto/shamu/audio_effects.conf:system/vendor/etc/audio_effects.conf \
+    device/moto/shamu/audio_effects.conf:system/etc/audio_effects.conf
+    
 PRODUCT_COPY_FILES += \
     device/moto/shamu/media_profiles.xml:system/etc/media_profiles.xml \
     device/moto/shamu/media_codecs.xml:system/etc/media_codecs.xml \
